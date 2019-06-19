@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nombre": "Fernand",
+      "apellido": "Quisi",
+      "email": "dquisi@ups.edu.ec"
+    },
+    {
+      "id": 2,
+      "nombre": "Maria 1234r5",
+      "apellido": "Peralta",
+      "email": "mperalta@ups.edu.ec"
+    },
+    {
+      "id": "3",
+      "nombre": " 1234",
+      "apellido": "LOPES",
+      "email": "ASD@;LAS.COM"
+    }
+  ]
+}

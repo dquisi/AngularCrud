@@ -26,7 +26,16 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'tab3',
+        path: 'tab2?refresh=1',
+        children: [
+          {
+            path: '',
+            loadChildren: '../tab2/tab2.module#Tab2PageModule'
+          }
+        ]
+      },
+      {
+        path: 'tab3/:id',
         children: [
           {
             path: '',
@@ -54,4 +63,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class TabsPageRoutingModule {}
+export class TabsPageRoutingModule { }

@@ -1,9 +1,22 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      Listar Usuarios
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <form>
+    <ion-list *ngFor="let user of users">
+      <ion-item>
+        <ion-label>{{user.id}}</ion-label>
+        <ion-label>{{user.nombre}}</ion-label>
+        <ion-label>{{user.apellido}}</ion-label>
+        <ion-label>{{user.email}}</ion-label>
+        <ion-button color="danger" (click)="eliminarUsuario(user.id)">Elminar</ion-button>
+        <ion-button color="light" (click)="editarUsuario(user.id)">Editar</ion-button>
+      </ion-item>
+    </ion-list>
+  </form>
+</ion-content>

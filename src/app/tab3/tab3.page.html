@@ -1,9 +1,20 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      Editar Usuario
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content></ion-content>
+<ion-content>
+  <form (ngSubmit)="editarUsuario()">
+    <ion-label>ID:</ion-label>
+    <ion-label>{{user.id}}</ion-label>
+    <ion-label>Nombre:</ion-label>
+    <ion-input  [(ngModel)]="user.nombre" name="nombre"></ion-input>
+    <ion-label>Apellido:</ion-label>
+    <ion-input  [(ngModel)]="user.apellido" name="apellido"></ion-input>
+    <ion-label>Email:</ion-label>
+    <ion-input  [(ngModel)]="user.email" name="email"></ion-input>
+    <ion-button color="danger" type="submit">Guardar</ion-button>
+  </form>
+</ion-content>
